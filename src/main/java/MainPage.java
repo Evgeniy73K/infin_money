@@ -10,6 +10,7 @@ public class MainPage {
 
     private By salesLink = By.xpath("//div[@class=\"sc-gIBqdA fcBZPL sc-PZsNp dknJIW  \"]/div[text()=\"Продажи\"]");
     private By addButton = By.xpath("//button[@class=\"sc-pVTFL bxJNrM addButton rectButton  \"]");
+    private By settingsButton = By.xpath("//div[text()=\"Настройки\"]");
 
     public void clickSaleslink() {
         driver.findElement(salesLink).click();
@@ -18,6 +19,11 @@ public class MainPage {
     public NewSalePage clickAddButton() {
         driver.findElement(addButton).click();
         return new NewSalePage(driver);
+    }
+
+    public SettingsPage clickSettingButton() {
+        driver.findElement(settingsButton).click();
+        return new SettingsPage(driver);
     }
 
 }

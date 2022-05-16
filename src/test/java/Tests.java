@@ -13,6 +13,7 @@ public class Tests {
     private LoginPage loginPage;
     private MainPage mainPage;
     private NewSalePage newSalePage;
+    private SettingsPage settingsPage;
 
 
     @BeforeMethod
@@ -25,10 +26,11 @@ public class Tests {
         loginPage = new LoginPage(driver);
         mainPage = new MainPage(driver);
         newSalePage = new NewSalePage(driver);
+        settingsPage = new SettingsPage(driver);
     }
 
-    @Test
-    public void test1() {
+   /* @Test
+    public void transactionRecovery() {
         safetyPage.unsafeJoin();
         loginPage.singIn();
         mainPage.clickSaleslink();
@@ -42,7 +44,20 @@ public class Tests {
 
 
 
+    }*/
+
+    @Test
+
+    public void importFile () {
+        safetyPage.unsafeJoin();
+        loginPage.singIn();
+        mainPage.clickSettingButton();
+        settingsPage.clickImportButton();
+        settingsPage.sentFile();
+
     }
+
+
     @AfterMethod
     public void tearDown() {
        // driver.quit();
