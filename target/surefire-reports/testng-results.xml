@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-17T14:15:58 SAMT" name="Surefire suite" finished-at="2022-05-17T14:16:23 SAMT" duration-ms="25206">
+    <groups>
+    </groups>
+    <test started-at="2022-05-17T14:15:58 SAMT" name="Surefire test" finished-at="2022-05-17T14:16:23 SAMT" duration-ms="25206">
+      <class name="Tests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests@181d7f28]" started-at="2022-05-17T14:15:58 SAMT" name="setUp" finished-at="2022-05-17T14:16:04 SAMT" duration-ms="5968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="importFile()[pri:0, instance:Tests@181d7f28]" started-at="2022-05-17T14:16:04 SAMT" name="importFile" finished-at="2022-05-17T14:16:10 SAMT" duration-ms="5617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- importFile -->
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:Tests@181d7f28]" started-at="2022-05-17T14:16:10 SAMT" name="takeScreenshot" finished-at="2022-05-17T14:16:10 SAMT" duration-ms="284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=importFile status=SUCCESS method=Tests.importFile()[pri:0, instance:Tests@181d7f28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests@181d7f28]" started-at="2022-05-17T14:16:10 SAMT" name="setUp" finished-at="2022-05-17T14:16:14 SAMT" duration-ms="3990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="transactionRecovery()[pri:0, instance:Tests@181d7f28]" started-at="2022-05-17T14:16:14 SAMT" name="transactionRecovery" finished-at="2022-05-17T14:16:23 SAMT" duration-ms="8866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transactionRecovery -->
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:Tests@181d7f28]" started-at="2022-05-17T14:16:23 SAMT" name="takeScreenshot" finished-at="2022-05-17T14:16:23 SAMT" duration-ms="154" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=transactionRecovery status=SUCCESS method=Tests.transactionRecovery()[pri:0, instance:Tests@181d7f28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+      </class> <!-- Tests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

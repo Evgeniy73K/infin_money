@@ -1,10 +1,21 @@
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
+
+import static io.qameta.allure.Allure.addAttachment;
 
 public class Tests {
 
@@ -14,6 +25,7 @@ public class Tests {
     private MainPage mainPage;
     private NewSalePage newSalePage;
     private SettingsPage settingsPage;
+    private  CheckPage checkPage;
 
 
     @BeforeMethod
@@ -21,15 +33,17 @@ public class Tests {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         WebDriver.Timeouts timeouts = driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        timeouts.implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://frontend.test2.infin.money/");
         safetyPage = new SafetyPage(driver);
         loginPage = new LoginPage(driver);
         mainPage = new MainPage(driver);
         newSalePage = new NewSalePage(driver);
         settingsPage = new SettingsPage(driver);
+        checkPage = new CheckPage(driver);
     }
 
-   /* @Test
+    @Test
     public void transactionRecovery() {
         safetyPage.unsafeJoin();
         loginPage.singIn();
@@ -44,22 +58,48 @@ public class Tests {
 
 
 
-    }*/
+    }
 
     @Test
-
     public void importFile () {
         safetyPage.unsafeJoin();
         loginPage.singIn();
         mainPage.clickSettingButton();
         settingsPage.clickImportButton();
-        settingsPage.sentFile();
+        settingsPage.sendFile();
+        String message = settingsPage.checkMessage();
+        Assert.assertEquals("Импорт транзакций прошел успешно", message);
 
+    }
+
+    @Test
+    public void createCheck() {
+        safetyPage.unsafeJoin();
+        loginPage.singIn();
+        mainPage.clickCheckPage();
+        checkPage.createNewCheck();
     }
 
 
     @AfterMethod
-    public void tearDown() {
-       // driver.quit();
+    public void takeScreenshot(ITestResult result) {
+        if (! result.isSuccess()) {
+            File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            Date date = new Date();
+            SimpleDateFormat format = new SimpleDateFormat("hh_mm_ss");
+            String name = format.format(date)+".png";
+
+            try {
+                FileUtils.copyFile(screen,new File("/home/evgeniy/Pictures/infin/"+name));
+                addAttachment("Screenshot", FileUtils.openInputStream(screen));
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        driver.quit();
     }
+
 }
