@@ -102,6 +102,14 @@ public class Tests {
         Assert.assertEquals(errorM, "Длина БИК банка должна быть 10 символов");
     }
 
+    @Test(priority = 0)
+    public void checkAutorization() {
+        safetyPage.unsafeJoin();
+        loginPage.singIn();
+        Boolean check = mainPage.checkAutoRization();
+        Assert.assertTrue(check);
+    }
+
 
     @AfterMethod
     public void takeScreenshot(ITestResult result) {

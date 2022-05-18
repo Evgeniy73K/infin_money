@@ -12,6 +12,7 @@ public class MainPage {
     private By addButton = By.xpath("//button[@class=\"sc-pVTFL bxJNrM addButton rectButton  \"]");
     private By settingsButton = By.xpath("//div[text()=\"Настройки\"]");
     private By checkLink = By.xpath("//div[text()=\"Счета\"]");
+    private By labelAuto = By.xpath("//span[@class=\"profileTitle\"]");
 
 
     public void clickSaleslink() {
@@ -33,6 +34,14 @@ public class MainPage {
     public SettingsPage clickSettingButton() {
         driver.findElement(settingsButton).click();
         return new SettingsPage(driver);
+    }
+
+    public Boolean checkAutoRization() {
+        if(driver.findElement(labelAuto).isDisplayed()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }
