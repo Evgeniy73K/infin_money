@@ -1,6 +1,7 @@
-SettingsPage.class
 MainClass.class
-LoginPage.class
 SafetyPage.class
-NewSalePage.class
 MainPage.class
+CheckPage.class
+SettingsPage.class
+LoginPage.class
+NewSalePage.class

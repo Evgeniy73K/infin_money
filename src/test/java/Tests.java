@@ -43,7 +43,7 @@ public class Tests {
         checkPage = new CheckPage(driver);
     }
 
-    @Test
+    @Test(priority = 1)
     public void transactionRecovery() {
         safetyPage.unsafeJoin();
         loginPage.singIn();
@@ -60,7 +60,7 @@ public class Tests {
 
     }
 
-    @Test
+    @Test(priority = 2)
     public void importFile () {
         safetyPage.unsafeJoin();
         loginPage.singIn();
@@ -72,7 +72,7 @@ public class Tests {
 
     }
 
-    @Test
+    @Test(priority = 3)
     public void createCheck() {
         safetyPage.unsafeJoin();
         loginPage.singIn();
@@ -85,7 +85,7 @@ public class Tests {
 
     }
 
-    @Test
+    @Test(priority = 4)
     public void checkValidationCheckField() {
         safetyPage.unsafeJoin();
         loginPage.singIn();
@@ -94,7 +94,7 @@ public class Tests {
         Assert.assertEquals(error, "Поле не должно быть пустым");
     }
 
-    @Test
+    @Test(priority = 5)
     public void checkValidationBikBankField() {
         safetyPage.unsafeJoin();
         loginPage.singIn();
