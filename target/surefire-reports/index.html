@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="Tests" class="method navigator-link" hash-for-method="createCheck">createCheck</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests" class="method navigator-link" hash-for-method="checkValidationCheckField">checkValidationCheckField</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -128,7 +128,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="Tests" class="method navigator-link" hash-for-method="checkValidationCheckField">checkValidationCheckField</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests" class="method navigator-link" hash-for-method="createCheck">createCheck</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -156,18 +156,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createCheck">
-                  </a> <!-- createCheck -->
-                  <span class="method-name">createCheck</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&quot;errorMessage&quot;]&quot;}
+                  <a name="checkValidationCheckField">
+                  </a> <!-- checkValidationCheckField -->
+                  <span class="method-name">checkValidationCheckField</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;sc-pVTFL bxJNrM addButton rectButton  &quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (552, 118). Other element would receive the click: &lt;div class=&quot;sc-bdvvtL kIEjym blockLoader&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=99.0.4844.51)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;evgeniy-Lenovo-ideapad-330-15IKB&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-40-generic&apos;, java.version: &apos;11.0.15&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a4322403ce6ff9bf6c2e84106a677c47, findElement {using=xpath, value=//div[@class=&quot;errorMessage&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.6la44Q}, goog:chromeOptions: {debuggerAddress: localhost:36793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36793/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a4322403ce6ff9bf6c2e84106a677c47
+Command: [f8248e53b665af58489af9338565ddef, clickElement {id=2bd64edd-a5bd-4eaf-af8d-f4af22a61e07}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.YYLGlS}, goog:chromeOptions: {debuggerAddress: localhost:40609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40609/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (f8248e53b665af58489af9338565ddef)] -&gt; xpath: //button[@class=&quot;sc-pVTFL bxJNrM addButton rectButton  &quot;]]
+Session ID: f8248e53b665af58489af9338565ddef
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -175,12 +175,10 @@ Session ID: a4322403ce6ff9bf6c2e84106a677c47
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at CheckPage.createNewCheck(CheckPage.java:48)
-	at Tests.createCheck(Tests.java:80)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at MainPage.clickCheckPage(MainPage.java:23)
+	at Tests.checkValidationCheckField(Tests.java:91)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 35 stack frames
 </div> <!-- stack-trace -->
@@ -191,15 +189,15 @@ Session ID: a4322403ce6ff9bf6c2e84106a677c47
                   <a name="transactionRecovery">
                   </a> <!-- transactionRecovery -->
                   <span class="method-name">transactionRecovery</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&quot;sc-pVTFL bxJNrM rectButton iconButton &quot;]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;option &quot;&gt;...&lt;/div&gt; is not clickable at point (1057, 115). Other element would receive the click: &lt;div class=&quot;sc-gGCDDS celXBt modalContentContainer incomeCreateContentContainer&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=99.0.4844.51)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;evgeniy-Lenovo-ideapad-330-15IKB&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-40-generic&apos;, java.version: &apos;11.0.15&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [60dd2926d1dc1950258b239eab97c804, findElement {using=xpath, value=//button[@class=&quot;sc-pVTFL bxJNrM rectButton iconButton &quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.8878kC}, goog:chromeOptions: {debuggerAddress: localhost:35829}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35829/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 60dd2926d1dc1950258b239eab97c804
+Command: [9dd03249acd435118f21204bfc17fa49, clickElement {id=bbcb052c-39ce-4a9d-a71b-daf355256ee5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.epPWHg}, goog:chromeOptions: {debuggerAddress: localhost:45003}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:45003/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (9dd03249acd435118f21204bfc17fa49)] -&gt; xpath: //div[text()=&quot;Активные&quot;]]
+Session ID: 9dd03249acd435118f21204bfc17fa49
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -207,11 +205,9 @@ Session ID: 60dd2926d1dc1950258b239eab97c804
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at NewSalePage.clickItem(NewSalePage.java:40)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at NewSalePage.clickItem(NewSalePage.java:39)
 	at Tests.transactionRecovery(Tests.java:53)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 35 stack frames
@@ -235,9 +231,9 @@ Session ID: 60dd2926d1dc1950258b239eab97c804
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="checkValidationCheckField">
-                  </a> <!-- checkValidationCheckField -->
-                  <span class="method-name">checkValidationCheckField</span>
+                  <a name="createCheck">
+                  </a> <!-- createCheck -->
+                  <span class="method-name">createCheck</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -302,30 +298,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'transactionRecovery')
+data.setCell(0, 1, 'createCheck')
 data.setCell(0, 2, 'Tests')
-data.setCell(0, 3, 16849);
+data.setCell(0, 3, 8312);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'createCheck')
+data.setCell(1, 1, 'transactionRecovery')
 data.setCell(1, 2, 'Tests')
-data.setCell(1, 3, 14877);
+data.setCell(1, 3, 6265);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkValidationBikBankField')
+data.setCell(2, 1, 'importFile')
 data.setCell(2, 2, 'Tests')
-data.setCell(2, 3, 6383);
+data.setCell(2, 3, 5828);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'importFile')
+data.setCell(3, 1, 'checkValidationBikBankField')
 data.setCell(3, 2, 'Tests')
-data.setCell(3, 3, 5634);
+data.setCell(3, 3, 5023);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'checkValidationCheckField')
 data.setCell(4, 2, 'Tests')
-data.setCell(4, 3, 5514);
+data.setCell(4, 3, 4962);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 49 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -357,64 +353,64 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">checkValidationBikBankField</span>
-                <span class="method-start">5971 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">takeScreenshot([TestResult name=checkValidationBikBankField status=SUCCESS method=Tests.checkValidationBikBankField...)</span>
-                <span class="method-start">12371 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">12585 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkValidationCheckField</span>
-                <span class="method-start">14912 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">takeScreenshot([TestResult name=checkValidationCheckField status=SUCCESS method=Tests.checkValidationCheckField()[p...)</span>
-                <span class="method-start">20444 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">21000 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createCheck</span>
-                <span class="method-start">23736 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">takeScreenshot([TestResult name=createCheck status=FAILURE method=Tests.createCheck()[pri:0, instance:Tests@78d50a3...)</span>
-                <span class="method-start">38629 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">39102 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">importFile</span>
-                <span class="method-start">42858 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">takeScreenshot([TestResult name=importFile status=SUCCESS method=Tests.importFile()[pri:0, instance:Tests@78d50a3c]...)</span>
-                <span class="method-start">48495 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">48706 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">transactionRecovery</span>
-                <span class="method-start">51671 ms</span>
+                <span class="method-start">8849 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenshot([TestResult name=transactionRecovery status=FAILURE method=Tests.transactionRecovery()[pri:0, instan...)</span>
-                <span class="method-start">68525 ms</span>
+                <span class="method-name">takeScreenshot([TestResult name=transactionRecovery status=FAILURE method=Tests.transactionRecovery()[pri:1, instan...)</span>
+                <span class="method-start">15215 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">15698 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">importFile</span>
+                <span class="method-start">19568 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshot([TestResult name=importFile status=SUCCESS method=Tests.importFile()[pri:2, instance:Tests@718607eb]...)</span>
+                <span class="method-start">25420 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">25610 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createCheck</span>
+                <span class="method-start">28791 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshot([TestResult name=createCheck status=SUCCESS method=Tests.createCheck()[pri:3, instance:Tests@718607e...)</span>
+                <span class="method-start">37104 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">37292 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkValidationCheckField</span>
+                <span class="method-start">40221 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshot([TestResult name=checkValidationCheckField status=FAILURE method=Tests.checkValidationCheckField()[p...)</span>
+                <span class="method-start">45213 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">45882 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkValidationBikBankField</span>
+                <span class="method-start">49174 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshot([TestResult name=checkValidationBikBankField status=SUCCESS method=Tests.checkValidationBikBankField...)</span>
+                <span class="method-start">54199 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

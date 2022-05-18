@@ -1,30 +1,30 @@
 -------------------------------------------------------------------------------
 Test set: Tests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 70.854 s <<< FAILURE! - in Tests
-createCheck(Tests)  Time elapsed: 14.896 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="errorMessage"]"}
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 56.715 s <<< FAILURE! - in Tests
+transactionRecovery(Tests)  Time elapsed: 6.36 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <div class="option ">...</div> is not clickable at point (1057, 115). Other element would receive the click: <div class="sc-gGCDDS celXBt modalContentContainer incomeCreateContentContainer">...</div>
   (Session info: chrome=99.0.4844.51)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'evgeniy-Lenovo-ideapad-330-15IKB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-40-generic', java.version: '11.0.15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a4322403ce6ff9bf6c2e84106a677c47, findElement {using=xpath, value=//div[@class="errorMessage"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.6la44Q}, goog:chromeOptions: {debuggerAddress: localhost:36793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:36793/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a4322403ce6ff9bf6c2e84106a677c47
-	at Tests.createCheck(Tests.java:80)
-
-transactionRecovery(Tests)  Time elapsed: 16.853 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class="sc-pVTFL bxJNrM rectButton iconButton "]"}
-  (Session info: chrome=99.0.4844.51)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'evgeniy-Lenovo-ideapad-330-15IKB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-40-generic', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [60dd2926d1dc1950258b239eab97c804, findElement {using=xpath, value=//button[@class="sc-pVTFL bxJNrM rectButton iconButton "]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.8878kC}, goog:chromeOptions: {debuggerAddress: localhost:35829}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:35829/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 60dd2926d1dc1950258b239eab97c804
+Command: [9dd03249acd435118f21204bfc17fa49, clickElement {id=bbcb052c-39ce-4a9d-a71b-daf355256ee5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.epPWHg}, goog:chromeOptions: {debuggerAddress: localhost:45003}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:45003/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (9dd03249acd435118f21204bfc17fa49)] -> xpath: //div[text()="Активные"]]
+Session ID: 9dd03249acd435118f21204bfc17fa49
 	at Tests.transactionRecovery(Tests.java:53)
+
+checkValidationCheckField(Tests)  Time elapsed: 4.995 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button class="sc-pVTFL bxJNrM addButton rectButton  " type="button">...</button> is not clickable at point (552, 118). Other element would receive the click: <div class="sc-bdvvtL kIEjym blockLoader">...</div>
+  (Session info: chrome=99.0.4844.51)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'evgeniy-Lenovo-ideapad-330-15IKB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-40-generic', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8248e53b665af58489af9338565ddef, clickElement {id=2bd64edd-a5bd-4eaf-af8d-f4af22a61e07}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.YYLGlS}, goog:chromeOptions: {debuggerAddress: localhost:40609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40609/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (f8248e53b665af58489af9338565ddef)] -> xpath: //button[@class="sc-pVTFL bxJNrM addButton rectButton  "]]
+Session ID: f8248e53b665af58489af9338565ddef
+	at Tests.checkValidationCheckField(Tests.java:91)
 

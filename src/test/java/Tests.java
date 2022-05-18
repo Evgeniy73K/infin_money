@@ -53,9 +53,8 @@ public class Tests {
         newSalePage.clickItem();
         newSalePage.deleteSales();
         newSalePage.re();
-        newSalePage.check();
-
-
+        Boolean check = newSalePage.check();
+        Assert.assertTrue(check);
 
 
     }

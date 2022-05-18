@@ -44,12 +44,14 @@ public class CheckPage {
         driver.findElement(selector2).click();
         driver.findElement(test).click();
         driver.findElement(buttonAdd).click();
-        if (bik.length() <10) {
+        if (bik.length()<9) {
             String errorM = driver.findElement(error).getText();
             return errorM;
+
         } else {
             return name;
         }
+
 
 
     }

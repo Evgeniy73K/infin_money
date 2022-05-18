@@ -7,7 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="transactionRecovery"/>
-          <include name="createCheck"/>
+          <include name="checkValidationCheckField"/>
           <include name="takeScreenshot"/>
         </methods>
       </class> <!-- Tests -->
