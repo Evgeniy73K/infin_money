@@ -9,7 +9,7 @@ public class MainPage {
     }
 
     private By salesLink = By.xpath("//div[@class=\"sc-gIBqdA fcBZPL sc-PZsNp dknJIW  \"]/div[text()=\"Продажи\"]");
-    private By addButton = By.xpath("//button[@class=\"sc-pVTFL bxJNrM addButton rectButton  \"]");
+    private By addButton = By.xpath("//button[text()=\"Добавить\"]");
     private By settingsButton = By.xpath("//div[text()=\"Настройки\"]");
     private By checkLink = By.xpath("//div[text()=\"Счета\"]");
     private By labelAuto = By.xpath("//span[@class=\"profileTitle\"]");

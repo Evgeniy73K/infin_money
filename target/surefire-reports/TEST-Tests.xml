@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Tests" time="56.715" tests="5" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Tests" time="83.452" tests="6" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -59,62 +59,35 @@
     <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="transactionRecovery" classname="Tests" time="6.36">
-    <failure message="element click intercepted: Element &lt;div class=&quot;option &quot;&gt;...&lt;/div&gt; is not clickable at point (1057, 115). Other element would receive the click: &lt;div class=&quot;sc-gGCDDS celXBt modalContentContainer incomeCreateContentContainer&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=99.0.4844.51)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;evgeniy-Lenovo-ideapad-330-15IKB&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-40-generic&apos;, java.version: &apos;11.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [9dd03249acd435118f21204bfc17fa49, clickElement {id=bbcb052c-39ce-4a9d-a71b-daf355256ee5}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.epPWHg}, goog:chromeOptions: {debuggerAddress: localhost:45003}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:45003/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on LINUX (9dd03249acd435118f21204bfc17fa49)] -&gt; xpath: //div[text()=&quot;Активные&quot;]]&#10;Session ID: 9dd03249acd435118f21204bfc17fa49" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="option ">...</div> is not clickable at point (1057, 115). Other element would receive the click: <div class="sc-gGCDDS celXBt modalContentContainer incomeCreateContentContainer">...</div>
+  <testcase name="checkAutorization" classname="Tests" time="4.822"/>
+  <testcase name="transactionRecovery" classname="Tests" time="5.629">
+    <failure message="element click intercepted: Element &lt;button class=&quot;sc-pVTFL bxJNrM addButton rectButton  &quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (410, 118). Other element would receive the click: &lt;div class=&quot;sc-bdvvtL kIEjym blockLoader&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=99.0.4844.51)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;evgeniy-Lenovo-ideapad-330-15IKB&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-40-generic&apos;, java.version: &apos;11.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ea80b03c6d24b54a533812c17990deeb, clickElement {id=9d9de15b-d960-421e-a40e-3cc437096ea4}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.7ZClVn}, goog:chromeOptions: {debuggerAddress: localhost:42293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42293/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on LINUX (ea80b03c6d24b54a533812c17990deeb)] -&gt; xpath: //button[text()=&quot;Добавить&quot;]]&#10;Session ID: ea80b03c6d24b54a533812c17990deeb" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button class="sc-pVTFL bxJNrM addButton rectButton  " type="button">...</button> is not clickable at point (410, 118). Other element would receive the click: <div class="sc-bdvvtL kIEjym blockLoader">...</div>
   (Session info: chrome=99.0.4844.51)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'evgeniy-Lenovo-ideapad-330-15IKB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-40-generic', java.version: '11.0.15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9dd03249acd435118f21204bfc17fa49, clickElement {id=bbcb052c-39ce-4a9d-a71b-daf355256ee5}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.epPWHg}, goog:chromeOptions: {debuggerAddress: localhost:45003}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:45003/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (9dd03249acd435118f21204bfc17fa49)] -> xpath: //div[text()="Активные"]]
-Session ID: 9dd03249acd435118f21204bfc17fa49
-	at Tests.transactionRecovery(Tests.java:53)
+Command: [ea80b03c6d24b54a533812c17990deeb, clickElement {id=9d9de15b-d960-421e-a40e-3cc437096ea4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.7ZClVn}, goog:chromeOptions: {debuggerAddress: localhost:42293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42293/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (ea80b03c6d24b54a533812c17990deeb)] -> xpath: //button[text()="Добавить"]]
+Session ID: ea80b03c6d24b54a533812c17990deeb
+	at Tests.transactionRecovery(Tests.java:51)
 ]]></failure>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 39736
+    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 50382
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1652871657,826][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
-May 18, 2022 3:01:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1652880977,743][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+May 18, 2022 5:36:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-May 18, 2022 3:01:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 18, 2022 5:36:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 96
-May 18, 2022 3:01:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 18, 2022 5:36:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 99 of 96
 ]]></system-err>
   </testcase>
-  <testcase name="importFile" classname="Tests" time="5.852"/>
-  <testcase name="createCheck" classname="Tests" time="8.315"/>
-  <testcase name="checkValidationCheckField" classname="Tests" time="4.995">
-    <failure message="element click intercepted: Element &lt;button class=&quot;sc-pVTFL bxJNrM addButton rectButton  &quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (552, 118). Other element would receive the click: &lt;div class=&quot;sc-bdvvtL kIEjym blockLoader&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=99.0.4844.51)&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;evgeniy-Lenovo-ideapad-330-15IKB&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-40-generic&apos;, java.version: &apos;11.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f8248e53b665af58489af9338565ddef, clickElement {id=2bd64edd-a5bd-4eaf-af8d-f4af22a61e07}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.YYLGlS}, goog:chromeOptions: {debuggerAddress: localhost:40609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40609/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on LINUX (f8248e53b665af58489af9338565ddef)] -&gt; xpath: //button[@class=&quot;sc-pVTFL bxJNrM addButton rectButton  &quot;]]&#10;Session ID: f8248e53b665af58489af9338565ddef" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <button class="sc-pVTFL bxJNrM addButton rectButton  " type="button">...</button> is not clickable at point (552, 118). Other element would receive the click: <div class="sc-bdvvtL kIEjym blockLoader">...</div>
-  (Session info: chrome=99.0.4844.51)
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'evgeniy-Lenovo-ideapad-330-15IKB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-40-generic', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f8248e53b665af58489af9338565ddef, clickElement {id=2bd64edd-a5bd-4eaf-af8d-f4af22a61e07}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.YYLGlS}, goog:chromeOptions: {debuggerAddress: localhost:40609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40609/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (f8248e53b665af58489af9338565ddef)] -> xpath: //button[@class="sc-pVTFL bxJNrM addButton rectButton  "]]
-Session ID: f8248e53b665af58489af9338565ddef
-	at Tests.checkValidationCheckField(Tests.java:91)
-]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 47510
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1652871691,842][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
-May 18, 2022 3:01:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-May 18, 2022 3:01:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 96
-May 18, 2022 3:01:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFO: Found CDP implementation for version 99 of 96
-]]></system-err>
-  </testcase>
-  <testcase name="checkValidationBikBankField" classname="Tests" time="5.024"/>
+  <testcase name="importFile" classname="Tests" time="6.707"/>
+  <testcase name="createCheck" classname="Tests" time="5.308"/>
+  <testcase name="checkValidationCheckField" classname="Tests" time="6.791"/>
+  <testcase name="checkValidationBikBankField" classname="Tests" time="6.848"/>
 </testsuite>

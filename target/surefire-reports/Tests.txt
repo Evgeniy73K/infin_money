@@ -1,30 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: Tests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 56.715 s <<< FAILURE! - in Tests
-transactionRecovery(Tests)  Time elapsed: 6.36 s  <<< FAILURE!
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 83.452 s <<< FAILURE! - in Tests
+transactionRecovery(Tests)  Time elapsed: 5.629 s  <<< FAILURE!
 org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="option ">...</div> is not clickable at point (1057, 115). Other element would receive the click: <div class="sc-gGCDDS celXBt modalContentContainer incomeCreateContentContainer">...</div>
+element click intercepted: Element <button class="sc-pVTFL bxJNrM addButton rectButton  " type="button">...</button> is not clickable at point (410, 118). Other element would receive the click: <div class="sc-bdvvtL kIEjym blockLoader">...</div>
   (Session info: chrome=99.0.4844.51)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'evgeniy-Lenovo-ideapad-330-15IKB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-40-generic', java.version: '11.0.15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9dd03249acd435118f21204bfc17fa49, clickElement {id=bbcb052c-39ce-4a9d-a71b-daf355256ee5}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.epPWHg}, goog:chromeOptions: {debuggerAddress: localhost:45003}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:45003/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (9dd03249acd435118f21204bfc17fa49)] -> xpath: //div[text()="Активные"]]
-Session ID: 9dd03249acd435118f21204bfc17fa49
-	at Tests.transactionRecovery(Tests.java:53)
-
-checkValidationCheckField(Tests)  Time elapsed: 4.995 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <button class="sc-pVTFL bxJNrM addButton rectButton  " type="button">...</button> is not clickable at point (552, 118). Other element would receive the click: <div class="sc-bdvvtL kIEjym blockLoader">...</div>
-  (Session info: chrome=99.0.4844.51)
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'evgeniy-Lenovo-ideapad-330-15IKB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-40-generic', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f8248e53b665af58489af9338565ddef, clickElement {id=2bd64edd-a5bd-4eaf-af8d-f4af22a61e07}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.YYLGlS}, goog:chromeOptions: {debuggerAddress: localhost:40609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40609/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (f8248e53b665af58489af9338565ddef)] -> xpath: //button[@class="sc-pVTFL bxJNrM addButton rectButton  "]]
-Session ID: f8248e53b665af58489af9338565ddef
-	at Tests.checkValidationCheckField(Tests.java:91)
+Command: [ea80b03c6d24b54a533812c17990deeb, clickElement {id=9d9de15b-d960-421e-a40e-3cc437096ea4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.7ZClVn}, goog:chromeOptions: {debuggerAddress: localhost:42293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42293/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (ea80b03c6d24b54a533812c17990deeb)] -> xpath: //button[text()="Добавить"]]
+Session ID: ea80b03c6d24b54a533812c17990deeb
+	at Tests.transactionRecovery(Tests.java:51)
 

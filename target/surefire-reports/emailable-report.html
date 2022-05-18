@@ -9,19 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">54,456</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">80,628</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Tests</td><td><a href="#m0">checkValidationCheckField</a></td><td rowspan="1">1652871693900</td><td rowspan="1">4962</td></tr><tr class="failedeven"><td><a href="#m1">transactionRecovery</a></td><td rowspan="1">1652871662528</td><td rowspan="1">6265</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Tests</td><td><a href="#m2">checkValidationBikBankField</a></td><td rowspan="1">1652871702853</td><td rowspan="1">5023</td></tr><tr class="passedeven"><td><a href="#m3">createCheck</a></td><td rowspan="1">1652871682470</td><td rowspan="1">8312</td></tr><tr class="passedeven"><td><a href="#m4">importFile</a></td><td rowspan="1">1652871673247</td><td rowspan="1">5828</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests</td><td><a href="#m0">transactionRecovery</a></td><td rowspan="1">1652880979521</td><td rowspan="1">5539</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">Tests</td><td><a href="#m1">checkAutorization</a></td><td rowspan="1">1652880970882</td><td rowspan="1">4793</td></tr><tr class="passedeven"><td><a href="#m2">checkValidationBikBankField</a></td><td rowspan="1">1652881024451</td><td rowspan="1">6827</td></tr><tr class="passedeven"><td><a href="#m3">checkValidationCheckField</a></td><td rowspan="1">1652881014509</td><td rowspan="1">6791</td></tr><tr class="passedeven"><td><a href="#m4">createCheck</a></td><td rowspan="1">1652881006170</td><td rowspan="1">5306</td></tr><tr class="passedeven"><td><a href="#m5">importFile</a></td><td rowspan="1">1652880994140</td><td rowspan="1">6705</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">Tests#checkValidationCheckField</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;sc-pVTFL bxJNrM addButton rectButton  &quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (552, 118). Other element would receive the click: &lt;div class=&quot;sc-bdvvtL kIEjym blockLoader&quot;&gt;...&lt;/div&gt;
+<h2>Surefire test</h2><h3 id="m0">Tests#transactionRecovery</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;sc-pVTFL bxJNrM addButton rectButton  &quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (410, 118). Other element would receive the click: &lt;div class=&quot;sc-bdvvtL kIEjym blockLoader&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=99.0.4844.51)
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;evgeniy-Lenovo-ideapad-330-15IKB&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-40-generic&apos;, java.version: &apos;11.0.15&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f8248e53b665af58489af9338565ddef, clickElement {id=2bd64edd-a5bd-4eaf-af8d-f4af22a61e07}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.YYLGlS}, goog:chromeOptions: {debuggerAddress: localhost:40609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40609/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (f8248e53b665af58489af9338565ddef)] -&gt; xpath: //button[@class=&quot;sc-pVTFL bxJNrM addButton rectButton  &quot;]]
-Session ID: f8248e53b665af58489af9338565ddef
+Command: [ea80b03c6d24b54a533812c17990deeb, clickElement {id=9d9de15b-d960-421e-a40e-3cc437096ea4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.7ZClVn}, goog:chromeOptions: {debuggerAddress: localhost:42293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42293/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (ea80b03c6d24b54a533812c17990deeb)] -&gt; xpath: //button[text()=&quot;Добавить&quot;]]
+Session ID: ea80b03c6d24b54a533812c17990deeb
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -31,34 +31,14 @@ Session ID: f8248e53b665af58489af9338565ddef
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at MainPage.clickCheckPage(MainPage.java:23)
-	at Tests.checkValidationCheckField(Tests.java:91)
+	at MainPage.clickAddButton(MainPage.java:30)
+	at Tests.transactionRecovery(Tests.java:51)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Tests#transactionRecovery</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;option &quot;&gt;...&lt;/div&gt; is not clickable at point (1057, 115). Other element would receive the click: &lt;div class=&quot;sc-gGCDDS celXBt modalContentContainer incomeCreateContentContainer&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=99.0.4844.51)
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;evgeniy-Lenovo-ideapad-330-15IKB&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.13.0-40-generic&apos;, java.version: &apos;11.0.15&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9dd03249acd435118f21204bfc17fa49, clickElement {id=bbcb052c-39ce-4a9d-a71b-daf355256ee5}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.epPWHg}, goog:chromeOptions: {debuggerAddress: localhost:45003}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:45003/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on LINUX (9dd03249acd435118f21204bfc17fa49)] -&gt; xpath: //div[text()=&quot;Активные&quot;]]
-Session ID: 9dd03249acd435118f21204bfc17fa49
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at NewSalePage.clickItem(NewSalePage.java:39)
-	at Tests.transactionRecovery(Tests.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests#checkAutorization</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">Tests#checkValidationBikBankField</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Tests#createCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Tests#importFile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tests#checkValidationCheckField</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Tests#createCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Tests#importFile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
