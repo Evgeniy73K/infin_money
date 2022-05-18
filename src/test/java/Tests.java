@@ -77,7 +77,7 @@ public class Tests {
         safetyPage.unsafeJoin();
         loginPage.singIn();
         mainPage.clickCheckPage();
-        String name = checkPage.createNewCheck("Test");
+        String name = checkPage.createNewCheck("Test", "044525974");
         String bankName = checkPage.getBankName(name);
         System.out.println(name);
         System.out.println(bankName);
@@ -92,6 +92,15 @@ public class Tests {
         mainPage.clickCheckPage();
         String  error = checkPage.createNewCheck();
         Assert.assertEquals(error, "Поле не должно быть пустым");
+    }
+
+    @Test
+    public void checkValidationBikBankField() {
+        safetyPage.unsafeJoin();
+        loginPage.singIn();
+        mainPage.clickCheckPage();
+        String errorM = checkPage.createNewCheck("sadsa", "12");
+        Assert.assertEquals(errorM, "Длина БИК банка должна быть 10 символов");
     }
 
 
@@ -113,7 +122,7 @@ public class Tests {
 
         }
 
-        //driver.quit();
+        driver.quit();
     }
 
 }

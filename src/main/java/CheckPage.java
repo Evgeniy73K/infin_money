@@ -29,7 +29,7 @@ public class CheckPage {
     private By error = By.xpath("//div[@class=\"errorMessage\"]");
 
 
-    public String createNewCheck(String name) {
+    public String createNewCheck(String name, String bik) {
         int n = rand.nextInt(50);
         name = name +n;
         driver.findElement(fieldName).sendKeys(name);
@@ -39,12 +39,18 @@ public class CheckPage {
         driver.findElement(selector).click();
         driver.findElement(selectorData).click();
         driver.findElement(titleBank).sendKeys("Test bank");
-        driver.findElement(bikBank).sendKeys("044525974");
+        driver.findElement(bikBank).sendKeys(bik);
         driver.findElement(invoiceNumber).sendKeys("12345678901234567890");
         driver.findElement(selector2).click();
         driver.findElement(test).click();
         driver.findElement(buttonAdd).click();
-        return name;
+        if (bik.length() <10) {
+            String errorM = driver.findElement(error).getText();
+            return errorM;
+        } else {
+            return name;
+        }
+
 
     }
 
@@ -62,6 +68,8 @@ public class CheckPage {
 
 
     }
+
+
 
     public String getBankName(String xpath_selector) {
         By xpath = By.xpath("//div[text()=\""+xpath_selector+"\"]");
