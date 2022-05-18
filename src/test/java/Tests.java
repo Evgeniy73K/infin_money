@@ -77,7 +77,12 @@ public class Tests {
         safetyPage.unsafeJoin();
         loginPage.singIn();
         mainPage.clickCheckPage();
-        checkPage.createNewCheck();
+        String name = checkPage.createNewCheck("Test");
+        String bankName = checkPage.getBankName(name);
+        System.out.println(name);
+        System.out.println(bankName);
+        Assert.assertEquals(name, bankName);
+
     }
 
 
@@ -99,7 +104,7 @@ public class Tests {
 
         }
 
-        driver.quit();
+        //driver.quit();
     }
 
 }
