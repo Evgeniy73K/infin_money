@@ -26,6 +26,7 @@ public class CheckPage {
     private By invoiceNumber = By.xpath("//input[@name=\"invoiceNumber\"]");
     private By buttonAdd = By.xpath("//button[text()=\"Добавить счет\"]");
     private By linkContent = By.xpath("//div[@class=\"linkContent\"]");
+    private By error = By.xpath("//div[@class=\"errorMessage\"]");
 
 
     public String createNewCheck(String name) {
@@ -44,6 +45,21 @@ public class CheckPage {
         driver.findElement(test).click();
         driver.findElement(buttonAdd).click();
         return name;
+
+    }
+
+    public String createNewCheck() {
+        driver.findElement(selector).click();
+        driver.findElement(selectorData).click();
+        driver.findElement(titleBank).sendKeys("Test bank");
+        driver.findElement(bikBank).sendKeys("044525974");
+        driver.findElement(invoiceNumber).sendKeys("12345678901234567890");
+        driver.findElement(selector2).click();
+        driver.findElement(test).click();
+        driver.findElement(buttonAdd).click();
+        String errorMessage =  driver.findElement(error).getText();
+        return errorMessage;
+
 
     }
 

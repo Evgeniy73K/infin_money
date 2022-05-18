@@ -85,6 +85,15 @@ public class Tests {
 
     }
 
+    @Test
+    public void checkValidationCheckField() {
+        safetyPage.unsafeJoin();
+        loginPage.singIn();
+        mainPage.clickCheckPage();
+        String  error = checkPage.createNewCheck();
+        Assert.assertEquals(error, "Поле не должно быть пустым");
+    }
+
 
     @AfterMethod
     public void takeScreenshot(ITestResult result) {
