@@ -44,4 +44,9 @@ public class MainPage {
         }
     }
 
+    public ProfilePage clickProfile() {
+        driver.findElement(labelAuto).click();
+        return new ProfilePage(driver);
+    }
+
 }

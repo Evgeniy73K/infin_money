@@ -41,7 +41,8 @@ public class SettingsPage {
         driver.findElement(confirmImportButton).click();
     }
 
-    public String checkMessage() {
+    public String checkMessage() throws InterruptedException {
+        Thread.sleep(100);
         String message = driver.findElement(checkImport).getText();
         return message;
     }

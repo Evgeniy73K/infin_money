@@ -30,7 +30,7 @@ public class CheckPage {
 
 
     public String createNewCheck(String name, String bik) {
-        int n = rand.nextInt(50);
+        int n = rand.nextInt(500);
         name = name +n;
         driver.findElement(fieldName).sendKeys(name);
         driver.findElement(fieldBalance).click();

@@ -3,6 +3,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.v85.audits.model.SameSiteCookieOperation;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -26,6 +27,7 @@ public class Tests {
     private NewSalePage newSalePage;
     private SettingsPage settingsPage;
     private  CheckPage checkPage;
+    private ProfilePage profilePage;
 
 
     @BeforeMethod
@@ -41,6 +43,7 @@ public class Tests {
         newSalePage = new NewSalePage(driver);
         settingsPage = new SettingsPage(driver);
         checkPage = new CheckPage(driver);
+        profilePage = new ProfilePage(driver);
     }
 
     @Test(priority = 1)
@@ -60,7 +63,7 @@ public class Tests {
     }
 
     @Test(priority = 2)
-    public void importFile () {
+    public void importFile () throws InterruptedException {
         safetyPage.unsafeJoin();
         loginPage.singIn();
         mainPage.clickSettingButton();
@@ -108,6 +111,19 @@ public class Tests {
         loginPage.singIn();
         Boolean check = mainPage.checkAutoRization();
         Assert.assertTrue(check);
+    }
+
+    @Test
+    public void checkEdittingProfile() throws InterruptedException {
+        safetyPage.unsafeJoin();
+        loginPage.singIn();
+        mainPage.clickProfile();
+        String nameInput = profilePage.editName("Василий СольDD");
+        String nameActual = profilePage.getName();
+        System.out.println(nameInput);
+        System.out.println(nameActual);
+        Assert.assertEquals(nameInput, nameActual);
+
     }
 
 
