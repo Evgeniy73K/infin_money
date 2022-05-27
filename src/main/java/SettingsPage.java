@@ -14,6 +14,8 @@ public class SettingsPage {
     public SettingsPage(WebDriver driver) {
         this.driver = driver;
     }
+
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     private By importButton = By.xpath("//div[@class=\"sc-djWRfJ kjnBPq sc-bUbRBg flRwdd\"]//div[text()=\"Импорт\"]");
     private By input = By.xpath("//input");
     private By selectData = By.xpath("//div[text()=\"Определить значение\"]");
