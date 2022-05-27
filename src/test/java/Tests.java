@@ -1,9 +1,12 @@
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.v85.audits.model.SameSiteCookieOperation;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -13,6 +16,7 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -28,6 +32,9 @@ public class Tests {
     private SettingsPage settingsPage;
     private  CheckPage checkPage;
     private ProfilePage profilePage;
+
+
+
 
 
     @BeforeMethod
@@ -128,10 +135,15 @@ public class Tests {
 
     @Test
     public void cancelEvent () {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         safetyPage.unsafeJoin();
         loginPage.singIn();
         mainPage.clickSettingButton();
         settingsPage.sendEvent();
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class=\"sc-bdvvtL kIEjym inviteLoader blockLoader\"]")));
+        settingsPage.cancel();
+
+
 
     }
 

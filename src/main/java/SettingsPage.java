@@ -1,8 +1,15 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class SettingsPage {
+
     private WebDriver driver;
+
+
 
     public SettingsPage(WebDriver driver) {
         this.driver = driver;
@@ -22,6 +29,7 @@ public class SettingsPage {
     private By calaboratorsButton = By.xpath("//div[text()=\"Сотрудники\"]");
     private By  eventCalButton = By.xpath("//button[text()=\"Пригласить сотрудника\"]");
     private By emailField = By.xpath("//input[@name=\"email\"]");
+    private By cancelButton = By.xpath("//button[text()=\"Отменить приглашение\"]");
     public void clickImportButton() {
         driver.findElement(importButton).click();
     }
@@ -56,6 +64,13 @@ public class SettingsPage {
         driver.findElement(emailField).click();
         driver.findElement(emailField).sendKeys("test@google.com");
         driver.findElement(emailField).submit();
+       // wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class=\"sc-bdvvtL kIEjym inviteLoader blockLoader\"]")));
 
+
+    }
+
+    public void cancel () {
+        driver.findElement(cancelButton).isEnabled();
+        driver.findElement(cancelButton).click();
     }
 }
