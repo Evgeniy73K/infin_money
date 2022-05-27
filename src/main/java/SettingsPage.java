@@ -19,6 +19,9 @@ public class SettingsPage {
     private By SendImportButton = By.xpath("//button[@class=\"sc-pVTFL bAhCI rectButton  \"]");
     private By confirmImportButton = By.xpath("//button[text()=\"Заполнить значения\"]");
     private By checkImport = By.xpath("//div[text()=\"Импорт транзакций прошел успешно\"]");
+    private By calaboratorsButton = By.xpath("//div[text()=\"Сотрудники\"]");
+    private By  eventCalButton = By.xpath("//button[text()=\"Пригласить сотрудника\"]");
+    private By emailField = By.xpath("//input[@name=\"email\"]");
     public void clickImportButton() {
         driver.findElement(importButton).click();
     }
@@ -45,5 +48,14 @@ public class SettingsPage {
         Thread.sleep(100);
         String message = driver.findElement(checkImport).getText();
         return message;
+    }
+
+    public void sendEvent () {
+        driver.findElement(calaboratorsButton).click();
+        driver.findElement(eventCalButton).click();
+        driver.findElement(emailField).click();
+        driver.findElement(emailField).sendKeys("test@google.com");
+        driver.findElement(emailField).submit();
+
     }
 }

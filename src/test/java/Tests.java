@@ -126,6 +126,15 @@ public class Tests {
 
     }
 
+    @Test
+    public void cancelEvent () {
+        safetyPage.unsafeJoin();
+        loginPage.singIn();
+        mainPage.clickSettingButton();
+        settingsPage.sendEvent();
+
+    }
+
 
     @AfterMethod
     public void takeScreenshot(ITestResult result) {
