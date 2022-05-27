@@ -140,7 +140,7 @@ public class Tests {
         loginPage.singIn();
         mainPage.clickSettingButton();
         settingsPage.sendEvent();
-        //wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class=\"sc-bdvvtL kIEjym inviteLoader blockLoader\"]")));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class=\"sc-bdvvtL kIEjym inviteLoader blockLoader\"]")));
         settingsPage.cancel();
 
 
