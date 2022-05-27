@@ -142,6 +142,8 @@ public class Tests {
         settingsPage.sendEvent();
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class=\"sc-bdvvtL kIEjym inviteLoader blockLoader\"]")));
         settingsPage.cancel();
+        Boolean isPresent = driver.findElements(By.xpath("//div[text()=\"test@gmail.com\"]")).size() > 0;
+        Assert.assertTrue(!isPresent);
 
 
 

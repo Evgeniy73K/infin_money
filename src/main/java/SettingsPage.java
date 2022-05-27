@@ -15,7 +15,7 @@ public class SettingsPage {
         this.driver = driver;
     }
 
-    
+
     private By importButton = By.xpath("//div[@class=\"sc-djWRfJ kjnBPq sc-bUbRBg flRwdd\"]//div[text()=\"Импорт\"]");
     private By input = By.xpath("//input");
     private By selectData = By.xpath("//div[text()=\"Определить значение\"]");
@@ -66,7 +66,6 @@ public class SettingsPage {
         driver.findElement(emailField).click();
         driver.findElement(emailField).sendKeys("test@google.com");
         driver.findElement(emailField).submit();
-       // wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class=\"sc-bdvvtL kIEjym inviteLoader blockLoader\"]")));
 
 
     }
