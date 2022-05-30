@@ -112,14 +112,6 @@ public class Tests {
         Assert.assertEquals(errorM, "Длина БИК банка должна быть 10 символов");
     }
 
-    @Test(priority = 0)
-    public void checkAutorization() {
-        safetyPage.unsafeJoin();
-        loginPage.singIn();
-        Boolean check = mainPage.checkAutoRization();
-        Assert.assertTrue(check);
-    }
-
     @Test
     public void checkEdittingProfile() throws InterruptedException {
         safetyPage.unsafeJoin();

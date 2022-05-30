@@ -16,6 +16,7 @@ public class SettingsPage {
     }
 
 
+
     private By importButton = By.xpath("//div[@class=\"sc-djWRfJ kjnBPq sc-bUbRBg flRwdd\"]//div[text()=\"Импорт\"]");
     private By input = By.xpath("//input");
     private By selectData = By.xpath("//div[text()=\"Определить значение\"]");
